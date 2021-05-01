@@ -23,13 +23,14 @@ class Posts extends Component {
     }
     
     render() {
-        return (
-            this.state.posts.map(post => {
-                return <Post key={post.id} title={post.title}
-                body={post.body}
-                />
-            })
-        );
+
+        return this.state.posts.length > 0 ? 
+        this.state.posts.map(post => {
+            return <Post key={post.id} title={post.title}
+            body={post.body}
+            />
+        })
+        : <h1>Loading ...</h1>
     }
 }
 
