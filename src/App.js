@@ -1,4 +1,5 @@
 import Biodata from './components/Biodata'
+import Component4 from './components/Component4'
 import NewBiodata from './components/NewBiodata'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Biodata nama="Irvan Ariyanto" semester="4" hobi={<Hobi/> }/>
       <Biodata nama="Irvan" semester="6 " />
       <NewBiodata nama="Irvan" semester="6 " hobi={<Hobi/>}/>
+      <Component4/>
     </div>
   );
 }
