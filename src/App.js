@@ -1,14 +1,13 @@
 import Biodata from './components/Biodata'
 import Component4 from './components/Component4'
 import NewBiodata from './components/NewBiodata'
+import Counter from './components/Counter'
 
 function App() {
   return (
     <div>
-      <Biodata nama="Irvan Ariyanto" semester="4" hobi={<Hobi/> }/>
-      <Biodata nama="Irvan" semester="6 " />
-      <NewBiodata nama="Irvan" semester="6 " hobi={<Hobi/>}/>
-      <Component4/>
+      <Counter/>
+      <Counter/>
     </div>
   );
 }
