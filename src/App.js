@@ -1,10 +1,12 @@
 import Biodata from './components/Biodata'
+import NewBiodata from './components/NewBiodata'
 
 function App() {
   return (
     <div>
-      <Biodata nama="Irvan Ariyanto" semester="4" hobi={<Hobi/>}/>
+      <Biodata nama="Irvan Ariyanto" semester="4" hobi={<Hobi/> }/>
       <Biodata nama="Irvan" semester="6 " />
+      <NewBiodata nama="Irvan" semester="6 " hobi={<Hobi/>}/>
     </div>
   );
 }
