@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Biodata from './components/Biodata'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Biodata nama="Irvan Ariyanto" semester="4" hobi={<Hobi/>}/>
+      <Biodata nama="Irvan" semester="6 " />
     </div>
   );
+}
+
+const Hobi = () => {
+  return (
+    <ul>
+      <li>Jogging</li>
+      <li>Berenang</li>
+      <li>Bela diri</li>
+    </ul>
+  )
 }
 
 export default App;
