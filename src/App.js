@@ -2,13 +2,13 @@
 // import Component4 from './components/Component4'
 // import NewBiodata from './components/NewBiodata'
 // import Counter from './components/Counter'
-// import FormInput from './components/FormInput'
-import Posts from './components/Posts'
+import FormInput from './components/FormInput'
+// import Posts from './components/Posts'
 
 function App() {
   return (
     <div>
-      <Posts/>
+      <FormInput/>
     </div>
   );
 }
